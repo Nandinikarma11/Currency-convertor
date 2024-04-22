@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0b0b11;
+    min-height: 100vh;
+}
+.container{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5) ;
+    padding: 24px 30px ;
+    backdrop-filter: blur(8px);
+    padding: 24px 30px;
+    text-align: center;
+
+
+   
+}
+.container h1{
+    font-size: 28px;
+    /* text-align:center ; */
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 40px;
+
+
+
+}
+.container .input-container{
+    border:2px solid #bbbbbd ;
+    border-radius: 4px;
+    margin-block: 20px;
+}
+.container .input-container:focus-within{
+    border-color: #0056b3;
+    
+}
+.container .input-container select,
+.container .input-container input{
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;;
+
+}
+.container .arrow{
+    transform: rotate(90deg);
+    font-size: 44px;
+}
+.container .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+
+
+}
+  /* responsive code */
+  @media screen and (max-width:420px){
+    .container{
+        width: 80%;
+
+    }
+    .container{
+        font-size: 22px;
+    }
+    .container .input-container{
+        border: none;
+
+
+    }
+    .container .input-container input,
+    .container .input-container select{
+        border: 1px solid #ccc;
+        margin-block: 4px;
+        width: 100%;
+
+
+
+    }
+  }
+
+
